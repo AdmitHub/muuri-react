@@ -1,4 +1,4 @@
-import type {ReactElement, Key} from 'react';
+import type {ReactNode, Key} from 'react';
 import type {DraggerEvent} from '../muuri'; // eslint-disable-line
 import type {DecoratedGrid} from './grid';
 import type {DecoratedItem} from './item';
@@ -7,7 +7,7 @@ import type {GridProps} from './muuriComponent';
 // Grid props.
 export interface ReactGridProps {
   /** The items to render. */
-  children?: ReactElement[];
+  children?: ReactNode;
   /** The attributes of the grid element. */
   gridProps?: object;
   /** The filter predicate of th grid. */
